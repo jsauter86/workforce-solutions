@@ -1,43 +1,48 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workforce Solutions & Employee Benefits</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k6RnY7acTz5eN1Lcof6tseSMRjiMPPMYe0T6sl5u1wfxBu5k84VfUfDb+MtTWBngIppQX30Pl1gog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Workforce Solutions & Employee Benefits</h1>
+            <p>Tailored Solutions for Businesses, Employees, and Brokers</p>
+            <a href="#inquiry" class="btn-primary">Submit an Inquiry</a>
+            <a href="#appointment" class="btn-secondary">Book an Appointment</a>
+        </div>
+    </header>
 
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About My Services</h2>
+            <p>I offer customized workforce solutions, including voluntary benefits and employee engagement strategies, tailored to business needs and broker partnerships.</p>
+        </div>
+    </section>
 
-header h1 {
-    margin: 0;
-}
+    <section id="inquiry" class="inquiry-section">
+        <div class="container">
+            <h2>Submit an Inquiry</h2>
+            <!-- Your Form Here -->
+        </div>
+    </section>
 
-header p {
-    font-size: 1.2rem;
-}
+    <section id="appointment" class="appointment-section">
+        <div class="container">
+            <h2>Book an Appointment</h2>
+            <iframe src="https://calendly.com/john-sauter-scheduletimewithme/one-on-one-with-john?back=1&month=2024-09"
+                    width="100%" height="500" frameborder="0"></iframe>
+        </div>
+    </section>
 
-nav a {
-    color: white;
-    margin: 0 1rem;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 2rem;
-    margin: 1rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-}
+    <footer class="footer">
+        <div class="container">
+            <p>Contact Information: [Your email, phone]</p>
+        </div>
+    </footer>
+</body>
+</html>
