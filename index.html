@@ -4,36 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workforce Solutions & Employee Benefits</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>John Sauter</h1>
-        <p>Providing Workforce Solutions & Employee Benefits</p>
-        <nav>
-            <a href="#inquiry">Submit an Inquiry</a>
-            <a href="#appointment">Book an Appointment</a>
-        </nav>
+    <header class="hero">
+        <div class="container">
+            <h1>John Sauter</h1>
+            <p>Workforce Solutions & Employee Benefits</p>
+            <a href="#inquiry" class="btn-primary"><i class="fas fa-envelope"></i> Submit an Inquiry</a>
+            <a href="#appointment" class="btn-secondary"><i class="fas fa-calendar-alt"></i> Book an Appointment</a>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About My Services</h2>
-        <p>I offer customized workforce solutions, including voluntary benefits and employee engagement strategies.</p>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About My Services</h2>
+            <p>I provide tailored workforce solutions including voluntary benefits, employee engagement strategies, and benefit customization for businesses, HR teams, and insurance brokers.</p>
+        </div>
     </section>
 
-    <section id="inquiry">
-        <h2>Submit an Inquiry</h2>
-        <!-- Your form will go here -->
+    <section id="inquiry" class="inquiry-section">
+        <div class="container">
+            <h2>Submit an Inquiry</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="benefits">Do you currently offer any voluntary benefits?</label><br>
+                <input type="radio" id="yes" name="benefits" value="Yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="benefits" value="No">
+                <label for="no">No</label><br>
+                <textarea placeholder="If yes, which ones?" name="details"></textarea>
+                <button type="submit" class="btn-primary">Submit</button>
+            </form>
+        </div>
     </section>
 
-    <section id="appointment">
-        <h2>Book an Appointment</h2>
-        <iframe src="https://calendly.com/john-sauter-scheduletimewithme/one-on-one-with-john?back=1&month=2024-09"
-                width="100%" height="500" frameborder="0"></iframe>
+    <section id="appointment" class="appointment-section">
+        <div class="container">
+            <h2>Book an Appointment</h2>
+            <iframe src="https://calendly.com/john-sauter-scheduletimewithme/one-on-one-with-john?back=1&month=2024-09"
+                    width="100%" height="500" frameborder="0"></iframe>
+        </div>
     </section>
 
-    <footer>
-        <p>Contact Information: [email] [phone]</p>
+    <footer class="footer">
+        <div class="container">
+            <p>Contact Information: [Your Email] | [Your Phone]</p>
+            <p>Follow me on: 
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </p>
+        </div>
     </footer>
 </body>
 </html>
